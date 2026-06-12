@@ -1,0 +1,1067 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Landsswap - Your trusted real estate platform for buying, selling, and swapping land and properties. Find your dream property today.">
+    <meta name="keywords" content="real estate, land for sale, property exchange, land swap, buy land, sell property, real estate marketplace">
+    <meta name="author" content="Landsswap">
+    <title>Landsswap | Buy, Sell & Swap Real Estate</title>
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="loader">
+            <div class="loader-logo">Landsswap</div>
+            <div class="loader-bar"><div class="loader-progress"></div></div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="nav-logo">
+                <span class="logo-icon">
+                    <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="2" y="18" width="16" height="20" rx="2" fill="#2563EB"/>
+                        <rect x="22" y="8" width="16" height="30" rx="2" fill="#3B82F6"/>
+                        <path d="M2 14L10 6L18 14" stroke="#1D4ED8" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M22 4L30 0L38 8" stroke="#2563EB" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </span>
+                <span class="logo-text">Lands<span class="logo-highlight">swap</span></span>
+            </a>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#properties" class="nav-link">Properties</a></li>
+                <li><a href="#how-it-works" class="nav-link">How It Works</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#market-insights" class="nav-link">Market Insights</a></li>
+                <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <a href="#contact" class="btn btn-outline btn-sm">List Property</a>
+                <a href="#contact" class="btn btn-primary btn-sm">Get Started</a>
+            </div>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-bg">
+            <div class="hero-overlay"></div>
+            <div class="hero-pattern"></div>
+        </div>
+        <div class="container hero-container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span class="badge-dot"></span>
+                    Trusted by 50,000+ Property Owners
+                </div>
+                <h1 class="hero-title">
+                    Find Your Perfect<br>
+                    <span class="text-gradient">Piece of Land</span>
+                </h1>
+                <p class="hero-subtitle">
+                    The premier marketplace for buying, selling, and swapping land and real estate.
+                    Discover residential plots, commercial properties, farmland, and more across the country.
+                </p>
+                <div class="hero-search">
+                    <form class="search-form" id="searchForm">
+                        <div class="search-group">
+                            <div class="search-field">
+                                <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+                                <input type="text" placeholder="City, ZIP, or address..." class="search-input" id="searchLocation">
+                            </div>
+                            <div class="search-field">
+                                <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg>
+                                <select class="search-select" id="searchType">
+                                    <option value="">Property Type</option>
+                                    <option value="residential">Residential Land</option>
+                                    <option value="commercial">Commercial Land</option>
+                                    <option value="agricultural">Agricultural/Farm</option>
+                                    <option value="industrial">Industrial Land</option>
+                                    <option value="recreational">Recreational Land</option>
+                                    <option value="vacant">Vacant Land</option>
+                                </select>
+                            </div>
+                            <div class="search-field">
+                                <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+                                <select class="search-select" id="searchBudget">
+                                    <option value="">Budget Range</option>
+                                    <option value="0-25000">Under $25,000</option>
+                                    <option value="25000-50000">$25,000 - $50,000</option>
+                                    <option value="50000-100000">$50,000 - $100,000</option>
+                                    <option value="100000-250000">$100,000 - $250,000</option>
+                                    <option value="250000-500000">$250,000 - $500,000</option>
+                                    <option value="500000+">$500,000+</option>
+                                </select>
+                            </div>
+                            <button type="submit" class="btn btn-primary search-btn">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+                                Search
+                            </button>
+                        </div>
+                    </form>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number" data-target="15000">0</span>+
+                        <span class="stat-label">Properties Listed</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-target="50000">0</span>+
+                        <span class="stat-label">Happy Clients</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-target="1200">0</span>+
+                        <span class="stat-label">Successful Swaps</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-target="48">0</span>
+                        <span class="stat-label">States Covered</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="hero-card hero-card-1">
+                    <div class="float-card">
+                        <div class="float-card-img"></div>
+                        <div class="float-card-info">
+                            <span class="float-card-tag">Featured</span>
+                            <h4>Mountain View Estate</h4>
+                            <p>5.2 Acres - Colorado</p>
+                            <div class="float-card-price">$285,000</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-card hero-card-2">
+                    <div class="float-card float-card-sm">
+                        <div class="float-card-icon green">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                        </div>
+                        <div>
+                            <strong>Verified Property</strong>
+                            <p>Title clear & approved</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-card hero-card-3">
+                    <div class="float-card float-card-sm">
+                        <div class="float-card-icon blue">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                        </div>
+                        <div>
+                            <strong>+2,400</strong>
+                            <p>New members this month</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-scroll">
+            <a href="#properties" class="scroll-down">
+                <span>Scroll to explore</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M19 12l-7 7-7-7"/></svg>
+            </a>
+        </div>
+    </section>
+
+    <!-- Property Categories -->
+    <section class="categories" id="categories">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Explore</span>
+                <h2 class="section-title">Browse by Property Type</h2>
+                <p class="section-subtitle">Whether you're looking for a homesite, farm, or commercial parcel, we have the right land for every purpose.</p>
+            </div>
+            <div class="categories-grid">
+                <div class="category-card" data-aos="fade-up">
+                    <div class="category-icon">
+                        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 42V18L24 6l18 12v24"/><path d="M18 42V30h12v12"/><rect x="14" y="22" width="6" height="5" rx="1"/><rect x="28" y="22" width="6" height="5" rx="1"/></svg>
+                    </div>
+                    <h3>Residential Land</h3>
+                    <p>Build your dream home on the perfect lot. Plots from 0.1 to 50 acres in planned communities and rural settings.</p>
+                    <span class="category-count">4,200+ listings</span>
+                </div>
+                <div class="category-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="category-icon">
+                        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="6" y="16" width="36" height="26" rx="2"/><path d="M6 16l18-10 18 10"/><path d="M20 42V28h8v14"/></svg>
+                    </div>
+                    <h3>Commercial Land</h3>
+                    <p>Prime locations for retail, office, and mixed-use development. Zoned and ready for your next business venture.</p>
+                    <span class="category-count">2,800+ listings</span>
+                </div>
+                <div class="category-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="category-icon">
+                        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M24 4v8M12 12h24"/><path d="M8 42l8-18h16l8 18"/><path d="M16 24c2-4 4-8 8-8s6 4 8 8"/></svg>
+                    </div>
+                    <h3>Agricultural & Farm</h3>
+                    <p>Fertile farmland, ranches, and timberland. Ideal for crops, livestock, or long-term agricultural investment.</p>
+                    <span class="category-count">3,100+ listings</span>
+                </div>
+                <div class="category-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="category-icon">
+                        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="8" y="20" width="32" height="22" rx="2"/><path d="M16 20V12a8 8 0 0 1 16 0v8"/><circle cx="24" cy="33" r="4"/></svg>
+                    </div>
+                    <h3>Industrial Land</h3>
+                    <p>Heavy-industrial and light-industrial zones near highways and rail. Perfect for warehouses and manufacturing.</p>
+                    <span class="category-count">1,500+ listings</span>
+                </div>
+                <div class="category-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="category-icon">
+                        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 38l8-8 8 4 8-12 8 8 8-16"/><path d="M4 42h40"/></svg>
+                    </div>
+                    <h3>Recreational Land</h3>
+                    <p>Hunting land, lakefront property, and mountain retreats. Escape the city and enjoy the great outdoors.</p>
+                    <span class="category-count">2,100+ listings</span>
+                </div>
+                <div class="category-card" data-aos="fade-up" data-aos-delay="500">
+                    <div class="category-icon">
+                        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="4" y="4" width="40" height="40" rx="2"/><path d="M4 16h40M16 4v40"/><circle cx="30" cy="30" r="6"/></svg>
+                    </div>
+                    <h3>Vacant & Raw Land</h3>
+                    <p>Untouched parcels awaiting your vision. Affordable per-acre pricing with development potential.</p>
+                    <span class="category-count">1,300+ listings</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Properties -->
+    <section class="properties" id="properties">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Featured Listings</span>
+                <h2 class="section-title">Top Properties This Month</h2>
+                <p class="section-subtitle">Hand-picked land and property listings with verified titles, clear ownership, and competitive pricing.</p>
+            </div>
+            <div class="property-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="residential">Residential</button>
+                <button class="filter-btn" data-filter="commercial">Commercial</button>
+                <button class="filter-btn" data-filter="agricultural">Agricultural</button>
+                <button class="filter-btn" data-filter="recreational">Recreational</button>
+            </div>
+            <div class="property-grid">
+                <!-- Property 1 -->
+                <div class="property-card" data-category="residential">
+                    <div class="property-image">
+                        <div class="placeholder-img residential-1"></div>
+                        <span class="property-badge featured">Featured</span>
+                        <span class="property-badge type">Residential</span>
+                        <button class="property-fav" aria-label="Save property">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+                        </button>
+                    </div>
+                    <div class="property-content">
+                        <div class="property-price">$189,000</div>
+                        <h3 class="property-title">Sunset Ridge Estate</h3>
+                        <p class="property-location">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                            Austin, TX 78701
+                        </p>
+                        <div class="property-features">
+                            <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/></svg> 3.5 Acres</span>
+                            <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"/><line x1="4" y1="22" x2="4" y2="15"/></svg> R-1 Zoning</span>
+                            <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg> Title Verified</span>
+                        </div>
+                        <div class="property-footer">
+                            <span class="property-date">Listed 3 days ago</span>
+                            <a href="#contact" class="property-link">View Details →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Property 2 -->
+                <div class="property-card" data-category="commercial">
+                    <div class="property-image">
+                        <div class="placeholder-img commercial-1"></div>
+                        <span class="property-badge new">New</span>
+                        <span class="property-badge type">Commercial</span>
+                        <button class="property-fav" aria-label="Save property">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+                        </button>
+                    </div>
+                    <div class="property-content">
+                        <div class="property-price">$1,250,000</div>
+                        <h3 class="property-title">Metro Business Park Lot</h3>
+                        <p class="property-location">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                            Denver, CO 80202
+                        </p>
+                        <div class="property-features">
+                            <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/></svg> 12 Acres</span>
+                            <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"/><line x1="4" y1="22" x2="4" y2="15"/></svg> C-2 Zoning</span>
+                            <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg> Title Verified</span>
+                        </div>
+                        <div class="property-footer">
+                            <span class="property-date">Listed 1 day ago</span>
+                            <a href="#contact" class="property-link">View Details →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Property 3 -->
+                <div class="property-card" data-category="agricultural">
+                    <div class="property-image">
+                        <div class="placeholder-img agricultural-1"></div>
+                        <span class="property-badge type">Agricultural</span>
+                        <button class="property-fav" aria-label="Save property">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+                        </button>
+                    </div>
+                    <div class="property-content">
+                        <div class="property-price">$420,000</div>
+                        <h3 class="property-title">Green Valley Farm</h3>
+                        <p class="property-location">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                            Des Moines, IA 50309
+                        </p>
+                        <div class="property-features">
+                            <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/></svg> 80 Acres</span>
+                            <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"/><line x1="4" y1="22" x2="4" y2="15"/></svg> AG Zoning</span>
+                            <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg> Irrigated</span>
+                        </div>
+                        <div class="property-footer">
+                            <span class="property-date">Listed 5 days ago</span>
+                            <a href="#contact" class="property-link">View Details →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Property 4 -->
+                <div class="property-card" data-category="recreational">
+                    <div class="property-image">
+                        <div class="placeholder-img recreational-1"></div>
+                        <span class="property-badge hot">Hot</span>
+                        <span class="property-badge type">Recreational</span>
+                        <button class="property-fav" aria-label="Save property">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+                        </button>
+                    </div>
+                    <div class="property-content">
+                        <div class="property-price">$95,000</div>
+                        <h3 class="property-title">Lakeside Retreat</h3>
+                        <p class="property-location">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                            Lake Tahoe, NV 89449
+                        </p>
+                        <div class="property-features">
+                            <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/></svg> 2.1 Acres</span>
+                            <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"/><line x1="4" y1="22" x2="4" y2="15"/></svg> Rec Zoning</span>
+                            <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg> Lake Access</span>
+                        </div>
+                        <div class="property-footer">
+                            <span class="property-date">Listed 2 days ago</span>
+                            <a href="#contact" class="property-link">View Details →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Property 5 -->
+                <div class="property-card" data-category="residential">
+                    <div class="property-image">
+                        <div class="placeholder-img residential-2"></div>
+                        <span class="property-badge type">Residential</span>
+                        <button class="property-fav" aria-label="Save property">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+                        </button>
+                    </div>
+                    <div class="property-content">
+                        <div class="property-price">$325,000</div>
+                        <h3 class="property-title">Hilltop Meadows</h3>
+                        <p class="property-location">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                            Asheville, NC 28801
+                        </p>
+                        <div class="property-features">
+                            <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/></svg> 7 Acres</span>
+                            <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"/><line x1="4" y1="22" x2="4" y2="15"/></svg> R-2 Zoning</span>
+                            <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg> Utilities On-Site</span>
+                        </div>
+                        <div class="property-footer">
+                            <span class="property-date">Listed 1 week ago</span>
+                            <a href="#contact" class="property-link">View Details →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Property 6 -->
+                <div class="property-card" data-category="commercial">
+                    <div class="property-image">
+                        <div class="placeholder-img commercial-2"></div>
+                        <span class="property-badge type">Commercial</span>
+                        <button class="property-fav" aria-label="Save property">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+                        </button>
+                    </div>
+                    <div class="property-content">
+                        <div class="property-price">$2,100,000</div>
+                        <h3 class="property-title">Interstate Commercial Hub</h3>
+                        <p class="property-location">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                            Nashville, TN 37201
+                        </p>
+                        <div class="property-features">
+                            <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/></svg> 25 Acres</span>
+                            <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"/><line x1="4" y1="22" x2="4" y2="15"/></svg> C-3 Zoning</span>
+                            <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg> Highway Frontage</span>
+                        </div>
+                        <div class="property-footer">
+                            <span class="property-date">Listed 4 days ago</span>
+                            <a href="#contact" class="property-link">View Details →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section-cta">
+                <a href="#contact" class="btn btn-outline">View All Properties</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="how-it-works" id="how-it-works">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Simple Process</span>
+                <h2 class="section-title">How Landsswap Works</h2>
+                <p class="section-subtitle">From listing to closing, we make land transactions simple and transparent.</p>
+            </div>
+            <div class="steps-grid">
+                <div class="step-card">
+                    <div class="step-number">01</div>
+                    <div class="step-icon">
+                        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="24" cy="24" r="20"/><path d="M24 14v10l7 7"/></svg>
+                    </div>
+                    <h3>Create Your Account</h3>
+                    <p>Sign up for free and complete your profile. Verify your identity to unlock full platform features and build trust with other users.</p>
+                </div>
+                <div class="step-connector"></div>
+                <div class="step-card">
+                    <div class="step-number">02</div>
+                    <div class="step-icon">
+                        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M28 4H12a4 4 0 0 0-4 4v32a4 4 0 0 0 4 4h24a4 4 0 0 0 4-4V16l-12-12z"/><path d="M28 4v12h12"/><path d="M16 26h16M16 34h10"/></svg>
+                    </div>
+                    <h3>List or Search</h3>
+                    <p>Post your land with photos, surveys, and legal details. Or search our database using advanced filters for location, size, zoning, and price.</p>
+                </div>
+                <div class="step-connector"></div>
+                <div class="step-card">
+                    <div class="step-number">03</div>
+                    <div class="step-icon">
+                        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 8h-6a2 2 0 0 0-2 2v6M18 8h18a2 2 0 0 1 2 2v6M18 8v12M10 16h28"/><path d="M10 16v22a2 2 0 0 0 2 2h24a2 2 0 0 0 2-2V16"/><path d="M18 28h12"/><path d="M18 34h8"/></svg>
+                    </div>
+                    <h3>Swap, Buy, or Sell</h3>
+                    <p>Negotiate directly with property owners. Our unique swap feature lets you trade land instead of cash. Use our secure escrow for safe transactions.</p>
+                </div>
+                <div class="step-connector"></div>
+                <div class="step-card">
+                    <div class="step-number">04</div>
+                    <div class="step-icon">
+                        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22a10 10 0 1 1 0 4"/><path d="M24 12l-4 4 4 4"/><path d="M24 38l4-4-4-4"/></svg>
+                    </div>
+                    <h3>Close the Deal</h3>
+                    <p>Finalize with our network of title companies and attorneys. We handle title search, deed transfer, and recording so you can close with confidence.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">What We Offer</span>
+                <h2 class="section-title">Comprehensive Real Estate Services</h2>
+                <p class="section-subtitle">More than a marketplace — we provide end-to-end support for your land transaction journey.</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="6" y="6" width="36" height="36" rx="4"/><path d="M6 18h36"/><path d="M18 6v36"/></svg>
+                    </div>
+                    <h3>Land Swapping</h3>
+                    <p>Our signature service. Trade your property for another without a cash sale. Perfect for owners looking to relocate, upsize, or downsize their land holdings.</p>
+                    <ul class="service-list">
+                        <li>Swap assessment & valuation</li>
+                        <li>Legal documentation support</li>
+                        <li>Equalization payment handling</li>
+                        <li>Multi-party swap coordination</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2v8M36 2v8M6 18h36"/><rect x="4" y="10" width="40" height="32" rx="4"/><path d="M16 28l4 4 8-8"/></svg>
+                    </div>
+                    <h3>Property Listing</h3>
+                    <p>Reach thousands of qualified buyers with our optimized listing tools. Professional exposure across web, mobile, and partner networks.</p>
+                    <ul class="service-list">
+                        <li>Professional photo uploads</li>
+                        <li>Survey & plat map inclusion</li>
+                        <li>SEO-optimized descriptions</li>
+                        <li>Performance analytics</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14 4h20l10 16-20 24L4 20z"/></svg>
+                    </div>
+                    <h3>Land Valuation</h3>
+                    <p>Get accurate property valuations using comparable sales data, soil reports, and zoning analysis. Know your land's true worth before you transact.</p>
+                    <ul class="service-list">
+                        <li>Comparative market analysis</li>
+                        <li>Soil & percolation reports</li>
+                        <li>Zoning & use verification</li>
+                        <li>Investment ROI projections</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22a10 10 0 1 1 0 4"/><path d="M24 42a18 18 0 1 1 0-36 18 18 0 0 1 0 36z"/><path d="M24 14v10l6 6"/></svg>
+                    </div>
+                    <h3>Title & Escrow</h3>
+                    <p>Secure transactions through our vetted title companies. We ensure clear title, handle escrow funds, and manage the closing process from start to finish.</p>
+                    <ul class="service-list">
+                        <li>Title search & insurance</li>
+                        <li>Secure escrow accounts</li>
+                        <li>Deed preparation & recording</li>
+                        <li>1031 exchange coordination</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M24 4v4M24 40v4M4 24h4M40 24h4M9.86 9.86l2.83 2.83M35.31 35.31l2.83 2.83M9.86 38.14l2.83-2.83M35.31 12.69l2.83-2.83"/><circle cx="24" cy="24" r="8"/></svg>
+                    </div>
+                    <h3>Market Research</h3>
+                    <p>Data-driven insights into land markets. Access trends, pricing history, development forecasts, and regional growth analysis to make informed decisions.</p>
+                    <ul class="service-list">
+                        <li>Regional market reports</li>
+                        <li>Price trend dashboards</li>
+                        <li>Development pipeline tracking</li>
+                        <li>Demographic shift analysis</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 42V18L24 4l20 14v24"/><path d="M16 42V28h16v14"/></svg>
+                    </div>
+                    <h3>Development Consulting</h3>
+                    <p>Planning to develop? Our network of civil engineers, architects, and planners can help you evaluate feasibility, permitting, and infrastructure costs.</p>
+                    <ul class="service-list">
+                        <li>Feasibility studies</li>
+                        <li>Permitting guidance</li>
+                        <li>Infrastructure cost estimates</li>
+                        <li>Contractor referrals</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Market Insights -->
+    <section class="market-insights" id="market-insights">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Data-Driven</span>
+                <h2 class="section-title">Market Insights & Trends</h2>
+                <p class="section-subtitle">Stay informed with the latest land market data and analysis.</p>
+            </div>
+            <div class="insights-grid">
+                <div class="insight-card main">
+                    <div class="insight-header">
+                        <span class="insight-tag">National Overview</span>
+                        <span class="insight-date">Q2 2026</span>
+                    </div>
+                    <h3>U.S. Land Market Summary</h3>
+                    <div class="insight-stats">
+                        <div class="insight-stat">
+                            <span class="insight-value">+8.3%</span>
+                            <span class="insight-label">Avg. Price YoY</span>
+                        </div>
+                        <div class="insight-stat">
+                            <span class="insight-value">$4,850</span>
+                            <span class="insight-label">Median / Acre</span>
+                        </div>
+                        <div class="insight-stat">
+                            <span class="insight-value">42 days</span>
+                            <span class="insight-label">Avg. Days on Market</span>
+                        </div>
+                    </div>
+                    <p class="insight-text">The national land market continues its upward trajectory in 2026, driven by strong demand for residential lots near metro areas and growing interest in renewable energy sites. Agricultural land in the Midwest remains stable, while recreational land in mountain states has seen the strongest appreciation at 12.4% year-over-year.</p>
+                    <a href="#contact" class="insight-link">Read Full Report →</a>
+                </div>
+                <div class="insight-side">
+                    <div class="insight-card mini">
+                        <span class="insight-tag">Residential</span>
+                        <h4>Homesite Demand Surges</h4>
+                        <p>Residential lot sales rose 15% in Q1 2026 as remote work drives suburban and exurban migration. Lots within 30 minutes of mid-size cities command a 22% premium.</p>
+                    </div>
+                    <div class="insight-card mini">
+                        <span class="insight-tag">Commercial</span>
+                        <h4>Logistics Land Booming</h4>
+                        <p>E-commerce growth fuels demand for industrial-zoned land near interstate interchanges. Commercial parcels with rail access saw 18% price increases in 2025.</p>
+                    </div>
+                    <div class="insight-card mini">
+                        <span class="insight-tag">Agricultural</span>
+                        <h4>Farmland Values Hold Steady</h4>
+                        <p>Corn belt farmland averaged $14,200/acre in 2026 Q1. Irrigated acres continue to outperform dryland, with a 35% price differential in key growing regions.</p>
+                    </div>
+                    <div class="insight-card mini">
+                        <span class="insight-tag">Recreational</span>
+                        <h4>Mountain & Lake Properties Lead</h4>
+                        <p>Recreational land in the Rockies and lakefront parcels in the Upper Midwest saw the highest buyer interest. Water-access properties traded at 2.3x the per-acre rate of inland parcels.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Land Swap Calculator -->
+    <section class="calculator" id="calculator">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Interactive Tool</span>
+                <h2 class="section-title">Land Swap Calculator</h2>
+                <p class="section-subtitle">Estimate the value exchange when swapping properties.</p>
+            </div>
+            <div class="calc-wrapper">
+                <div class="calc-panel">
+                    <h3>Your Property</h3>
+                    <div class="calc-field">
+                        <label>Estimated Value ($)</label>
+                        <input type="number" id="yourValue" placeholder="e.g., 250000" value="250000">
+                    </div>
+                    <div class="calc-field">
+                        <label>Acreage</label>
+                        <input type="number" id="yourAcreage" placeholder="e.g., 10" value="10">
+                    </div>
+                    <div class="calc-field">
+                        <label>Property Type</label>
+                        <select id="yourType">
+                            <option value="residential">Residential</option>
+                            <option value="commercial">Commercial</option>
+                            <option value="agricultural">Agricultural</option>
+                            <option value="recreational">Recreational</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="calc-swap-icon">
+                    <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 24h32M36 16l8 8-8 8"/><path d="M12 16l-8 8 8 8" transform="translate(24 0) scale(-1 1) translate(-24 0)"/></svg>
+                </div>
+                <div class="calc-panel">
+                    <h3>Target Property</h3>
+                    <div class="calc-field">
+                        <label>Estimated Value ($)</label>
+                        <input type="number" id="targetValue" placeholder="e.g., 300000" value="300000">
+                    </div>
+                    <div class="calc-field">
+                        <label>Acreage</label>
+                        <input type="number" id="targetAcreage" placeholder="e.g., 15" value="15">
+                    </div>
+                    <div class="calc-field">
+                        <label>Property Type</label>
+                        <select id="targetType">
+                            <option value="residential">Residential</option>
+                            <option value="commercial">Commercial</option>
+                            <option value="agricultural">Agricultural</option>
+                            <option value="recreational">Recreational</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <button class="btn btn-primary calc-btn" id="calcBtn">Calculate Swap</button>
+            <div class="calc-result" id="calcResult">
+                <div class="calc-result-item">
+                    <span class="calc-result-label">Value Difference</span>
+                    <span class="calc-result-value" id="valueDiff">-$50,000</span>
+                </div>
+                <div class="calc-result-item">
+                    <span class="calc-result-label">Per-Acre Difference</span>
+                    <span class="calc-result-value" id="acreDiff">-$5,000/acre</span>
+                </div>
+                <div class="calc-result-item">
+                    <span class="calc-result-label">Equalization Payment</span>
+                    <span class="calc-result-value" id="eqPayment">$50,000 due from you</span>
+                </div>
+                <p class="calc-disclaimer">This calculator provides estimates only. Actual swap terms depend on appraisals, surveys, and legal review. Contact us for a professional valuation.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Success Stories</span>
+                <h2 class="section-title">What Our Clients Say</h2>
+                <p class="section-subtitle">Real people, real transactions. See how Landsswap has helped property owners across the country.</p>
+            </div>
+            <div class="testimonial-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">
+                        <span>&starf;</span><span>&starf;</span><span>&starf;</span><span>&starf;</span><span>&starf;</span>
+                    </div>
+                    <blockquote>"I swapped my 20-acre farm in Ohio for a 5-acre residential lot near Austin. Landsswap made the process seamless — the escrow protection gave me total peace of mind."</blockquote>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">RM</div>
+                        <div>
+                            <strong>Robert Mitchell</strong>
+                            <span>Land Swap — Ohio to Texas</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">
+                        <span>&starf;</span><span>&starf;</span><span>&starf;</span><span>&starf;</span><span>&starf;</span>
+                    </div>
+                    <blockquote>"As a first-time land buyer, I had no idea where to start. The valuation tool and market insights on Landsswap helped me find a 3-acre lot in Colorado below market price."</blockquote>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">SK</div>
+                        <div>
+                            <strong>Sarah Kim</strong>
+                            <span>Residential Land Purchase — Colorado</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">
+                        <span>&starf;</span><span>&starf;</span><span>&starf;</span><span>&starf;</span><span>&starf;</span>
+                    </div>
+                    <blockquote>"We listed our commercial parcel and had 3 offers within a week. The platform's reach is incredible. Title and escrow services handled everything — we just signed and closed."</blockquote>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">JD</div>
+                        <div>
+                            <strong>James Delgado</strong>
+                            <span>Commercial Land Sale — Tennessee</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="why-us" id="why-us">
+        <div class="container">
+            <div class="why-us-grid">
+                <div class="why-us-content">
+                    <span class="section-tag">Why Landsswap</span>
+                    <h2 class="section-title">The Trusted Name in Land Transactions</h2>
+                    <p>We go beyond listings. Landsswap is a full-service platform designed specifically for land and real property — with the tools, data, and legal safeguards that generic marketplaces can't match.</p>
+                    <div class="why-us-features">
+                        <div class="why-feature">
+                            <div class="why-feature-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                            </div>
+                            <div>
+                                <strong>Verified Titles Only</strong>
+                                <p>Every listed property undergoes a preliminary title check before appearing on the platform.</p>
+                            </div>
+                        </div>
+                        <div class="why-feature">
+                            <div class="why-feature-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="4" width="22" height="16" rx="2"/><path d="M1 10h22"/></svg>
+                            </div>
+                            <div>
+                                <strong>Secure Escrow</strong>
+                                <p>Funds are held in licensed escrow accounts until all contingencies are met and title clears.</p>
+                            </div>
+                        </div>
+                        <div class="why-feature">
+                            <div class="why-feature-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                            </div>
+                            <div>
+                                <strong>Dedicated Support</strong>
+                                <p>Your personal transaction coordinator guides you from offer to close — no call centers.</p>
+                            </div>
+                        </div>
+                        <div class="why-feature">
+                            <div class="why-feature-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+                            </div>
+                            <div>
+                                <strong>Swap-First Platform</strong>
+                                <p>The only marketplace designed for property exchanges, not just cash sales. Trade what you have for what you want.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="why-us-visual">
+                    <div class="why-img-container">
+                        <div class="why-img-placeholder"></div>
+                        <div class="why-img-badge">
+                            <strong>4.9/5</strong>
+                            <span>Client Rating</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq" id="faq">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Got Questions?</span>
+                <h2 class="section-title">Frequently Asked Questions</h2>
+                <p class="section-subtitle">Everything you need to know about buying, selling, and swapping land on Landsswap.</p>
+            </div>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <button class="faq-question">
+                        What is land swapping and how does it work?
+                        <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Land swapping is the exchange of one property for another between two owners, potentially with an equalization payment if the values differ. On Landsswap, you list your property, find a property you're interested in, and propose a swap. If both parties agree on value, our platform facilitates the legal documentation, title transfer, and closing process. Equalization payments handle any value gap between the two properties.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        Is Landsswap free to use?
+                        <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Creating an account and browsing listings is completely free. Listing a property is free for your first listing. Premium listings with enhanced visibility and professional photography are available for a small fee. We charge a competitive transaction fee only when a sale or swap closes successfully — no upfront costs, no hidden charges.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        How do you verify property titles?
+                        <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Every property listed on Landsswap undergoes a preliminary title search through our network of licensed title companies. We verify ownership records, check for liens and encumbrances, confirm legal descriptions, and validate zoning designations. For transactions, a full title insurance policy is issued to protect the buyer. Our verification badge on a listing means the title has been cleared through this process.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        Can I swap land across different states?
+                        <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Absolutely! Interstate land swaps are common on our platform. Each state has its own recording and transfer requirements, but our legal team and network of attorneys handles the compliance for both states. We coordinate cross-state title searches, deed preparation, and recording so both transfers close simultaneously through our escrow service.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        What types of land can I list on Landsswap?
+                        <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>You can list virtually any type of real property: residential lots, commercial parcels, agricultural and farm land, industrial sites, recreational properties, timberland, ranchland, vacant raw land, mixed-use parcels, and even fractional ownership interests. Each category has tailored fields for relevant details like soil types, water rights, mineral rights, easements, and zoning classifications.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        How does the escrow process work?
+                        <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Once both parties agree to terms, funds (or equalization payments) are deposited into a licensed escrow account managed by an independent escrow officer. The escrow holds all funds until: (1) title clearance is confirmed, (2) all contingencies are met (surveys, inspections, etc.), and (3) deeds are prepared and signed. Only then are funds disbursed and deeds recorded. This protects both buyer and seller throughout the transaction.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        Can I use a 1031 exchange with a land swap?
+                        <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes! Land swaps can qualify as 1031 like-kind exchanges under IRS rules, allowing you to defer capital gains tax. Our platform works with qualified intermediaries to structure transactions as 1031 exchanges when appropriate. We handle the strict timelines (45-day identification, 180-day closing) and documentation requirements. Always consult with a tax professional for your specific situation.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact / CTA Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <span class="section-tag">Get In Touch</span>
+                    <h2>Ready to Find Your Land?</h2>
+                    <p>Whether you're buying your first lot, selling a family farm, or looking to swap properties — we're here to help. Fill out the form and a land specialist will reach out within 24 hours.</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                            <div>
+                                <strong>Office</strong>
+                                <p>landsswap.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                            <div>
+                                <strong>Email</strong>
+                                <p>info@landsswap.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                            <div>
+                                <strong>Phone</strong>
+                                <p>1-800-LAND-SWP</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form-wrapper">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="firstName">First Name</label>
+                                <input type="text" id="firstName" name="firstName" placeholder="John" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="lastName">Last Name</label>
+                                <input type="text" id="lastName" name="lastName" placeholder="Doe" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" placeholder="john@example.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" placeholder="(555) 123-4567">
+                        </div>
+                        <div class="form-group">
+                            <label for="interest">I'm Interested In</label>
+                            <select id="interest" name="interest" required>
+                                <option value="">Select one...</option>
+                                <option value="buying">Buying Land</option>
+                                <option value="selling">Selling Land</option>
+                                <option value="swapping">Swapping Land</option>
+                                <option value="valuation">Property Valuation</option>
+                                <option value="consulting">Development Consulting</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="4" placeholder="Tell us about your property needs..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+                        <p class="form-note">By submitting, you agree to our Privacy Policy and Terms of Service.</p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter-content">
+                <h2>Stay Updated on Land Markets</h2>
+                <p>Get weekly market reports, new listings, and swap opportunities delivered to your inbox.</p>
+                <form class="newsletter-form" id="newsletterForm">
+                    <input type="email" placeholder="Enter your email address" required>
+                    <button type="submit" class="btn btn-primary">Subscribe</button>
+                </form>
+                <span class="newsletter-note">Join 25,000+ subscribers. No spam, unsubscribe anytime.</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="nav-logo">
+                        <span class="logo-icon">
+                            <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect x="2" y="18" width="16" height="20" rx="2" fill="#2563EB"/>
+                                <rect x="22" y="8" width="16" height="30" rx="2" fill="#3B82F6"/>
+                                <path d="M2 14L10 6L18 14" stroke="#1D4ED8" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M22 4L30 0L38 8" stroke="#2563EB" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </span>
+                        <span class="logo-text">Lands<span class="logo-highlight">swap</span></span>
+                    </a>
+                    <p>The premier marketplace for buying, selling, and swapping land and real estate across the United States.</p>
+                    <div class="footer-social">
+                        <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+                        <a href="#" aria-label="Twitter"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/></svg></a>
+                        <a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a>
+                        <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Property Types</h4>
+                    <ul>
+                        <li><a href="#properties">Residential Land</a></li>
+                        <li><a href="#properties">Commercial Land</a></li>
+                        <li><a href="#properties">Agricultural & Farm</a></li>
+                        <li><a href="#properties">Industrial Land</a></li>
+                        <li><a href="#properties">Recreational Land</a></li>
+                        <li><a href="#properties">Vacant & Raw Land</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#services">Land Swapping</a></li>
+                        <li><a href="#services">Property Listing</a></li>
+                        <li><a href="#services">Land Valuation</a></li>
+                        <li><a href="#services">Title & Escrow</a></li>
+                        <li><a href="#services">Market Research</a></li>
+                        <li><a href="#services">Development Consulting</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Press</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Partners</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Cookie Policy</a></li>
+                        <li><a href="#">Fair Housing</a></li>
+                        <li><a href="#">Disclaimer</a></li>
+                        <li><a href="#">Accessibility</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Landsswap. All rights reserved. landsswap.com</p>
+                <p>Landsswap is a real estate marketplace. All property information is deemed reliable but not guaranteed. Buyers should conduct independent due diligence including surveys, inspections, and title review.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 15l-6-6-6 6"/></svg>
+    </button>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
